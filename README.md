@@ -39,6 +39,7 @@ nix run github:tacbooon/nixpkgs-extras#<package-name>
 
 | Package | Version | Description |
 | --- | --- | --- |
+| [jactionlint](https://github.com/jdx/jactionlint) | 2.3.0 | Static checker for GitHub Actions workflow files |
 
 ## Adding Packages
 
