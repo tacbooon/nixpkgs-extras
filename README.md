@@ -40,6 +40,7 @@ nix run github:tacbooon/nixpkgs-extras#<package-name>
 | Package | Version | Description |
 | --- | --- | --- |
 | [jactionlint](https://github.com/jdx/jactionlint) | 2.3.0 | Static checker for GitHub Actions workflow files |
+| [lute](https://github.com/luau-lang/lute) | 1.0.0 | Standalone Luau runtime for general-purpose programming |
 
 ## Adding Packages
 
@@ -61,4 +62,12 @@ Update the version and the source hash with [`nix-update`](https://github.com/Mi
 
 ```bash
 nix run nixpkgs#nix-update -- --flake <package-name>
+```
+
+`lute` also vendors the dependencies that upstream pins in its `extern/*.tune`
+files, so regenerate `pkgs/lute/deps.nix` afterwards. The script needs `curl`,
+`jq` and `nix` on `PATH`:
+
+```bash
+nix shell nixpkgs#curl nixpkgs#jq -c pkgs/lute/update-deps.sh
 ```
