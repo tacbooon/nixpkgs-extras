@@ -39,7 +39,7 @@ nix run github:tacbooon/nixpkgs-extras#<package-name>
 
 | Package | Version | Description |
 | --- | --- | --- |
-| [jactionlint](https://github.com/jdx/jactionlint) | 2.3.0 | Static checker for GitHub Actions workflow files |
+| [jactionlint](https://github.com/jdx/jactionlint) | 2.4.0 | Static checker for GitHub Actions workflow files |
 | [lute](https://github.com/luau-lang/lute) | 1.0.0 | Standalone Luau runtime for general-purpose programming |
 
 ## Adding Packages
